@@ -375,7 +375,7 @@ nav a {
 }
 
 .package-btn {
-  background: #ff8c2a;
+  background: #3b82f6;
   color: #fff;
   padding: 14px 50px;
   border-radius: 10px;
@@ -386,7 +386,7 @@ nav a {
 }
 
 .package-btn:hover {
-  background: #e6761f;
+  background: #1f2937;
 }
 
 
@@ -401,4 +401,5 @@ nav a {
   .logo img {
     height: 40px;
   }
+
 }
