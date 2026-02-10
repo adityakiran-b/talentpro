@@ -12,9 +12,10 @@ body {
 
 /* UTILITIES */
 .container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
+  width: 95%;
+  
+  margin:0 auto;
+  padding: 0 16px;
 }
 
 .center {
@@ -37,10 +38,16 @@ body {
 }
 
 .logo {
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #fff;
+  display: flex;
+  align-items: center;
 }
+
+.logo img {
+  height: 48px;          /* desktop size */
+  width: auto;
+  display: block;
+}
+
 
 .logo span {
   color: #3b82f6;
@@ -313,4 +320,85 @@ nav a {
   to   { transform: translateX(100px); }
 }
 
+}
+.packages-wrapper {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.packages-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.package-card {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 30px 25px;
+}
+
+.package-card h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 15px;
+}
+
+.package-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.package-list li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 16px;
+  color: #374151;
+}
+
+.package-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #22c55e;
+  font-weight: bold;
+}
+
+.packages-cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.package-btn {
+  background: #ff8c2a;
+  color: #fff;
+  padding: 14px 50px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.package-btn:hover {
+  background: #e6761f;
+}
+
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    height: 40px;
+  }
 }
